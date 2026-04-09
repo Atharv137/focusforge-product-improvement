@@ -81,27 +81,52 @@ header {
   color: #94a3b8;
 }
 
-/* Redesign candidate styles */
-.motivation-widget {
-  background-color: #fffbeb;
+/* Progress Tracker styles */
+.progress-widget {
+  background-color: #f0fdf4;
   padding: 15px;
-  border: 1px solid #fde68a;
+  border: 1px solid #bbf7d0;
   border-radius: 8px;
   text-align: center;
   min-height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-.motivation-widget h3 {
+.progress-widget h3 {
   margin-top: 0;
-  font-size: 1rem;
-  color: #d97706;
+  font-size: 1.1rem;
+  color: #166534;
+  margin-bottom: 15px;
 }
 
-.motivation-widget p {
-  font-style: italic;
-  font-size: 0.9rem;
-  color: #92400e;
+.progress-stats p {
+  font-weight: 500;
+  color: #15803d;
+  margin-bottom: 10px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 12px;
+  background-color: #dcfce7;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #22c55e;
+  border-radius: 6px;
+  transition: width 0.3s ease-in-out;
+}
+
+.progress-percentage {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #166534;
+  margin: 0;
 }
